@@ -30,6 +30,7 @@ for DIR in $(find "${MAINDIR}" -type d); do
         if [ "${noCULL}" == "0" ]; then
             rm -f "$DIR"/*.fastq
         fi
+        rm -rf "$DIR"/filesInDir.txt
     fi
 done
 
